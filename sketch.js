@@ -122,9 +122,6 @@ function draw() {
 
     drawSprites();
 
-    if(collide(birds,pig,20)==true) {
-        pig.visible=false;
-    }
 }
 
 function keyPressed() {
@@ -157,7 +154,7 @@ function collide(body,sprite,a)
 {
   if(body!=null)
         {
-         var d = dist(body.position.x,body.position.y,sprite.position.x,sprite.position.y);
+         var d = dist();
           if(d<=a)
             {
                return true; 
